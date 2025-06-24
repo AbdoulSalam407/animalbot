@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: animalbot-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn animalbot.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: animalbot.settings
+      - key: WEB_CONCURRENCY
+        value: 4
