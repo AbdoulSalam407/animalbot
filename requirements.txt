@@ -1,3 +1,8 @@
+Django>=4.2
+djangorestframework
+gunicorn
+tensorflow==2.13.0
+pillow
 absl-py==2.3.0
 asgiref==3.8.1
 astunparse==1.6.3
